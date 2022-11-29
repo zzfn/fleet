@@ -10,7 +10,6 @@ const NavCard = ({record}:any) => {
               width={80}
               height={80}
           />
-          <img src="" alt=""/>
       </p>
   </a>
 }
