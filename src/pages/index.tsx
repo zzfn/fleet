@@ -17,7 +17,13 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.grid}>
           {
-              data?.map((item: any)=><NavCard key={item.url} record={item}/>)
+            [{
+              url:'https://vercel.com',
+              title:'Blog'
+            },{
+              url:'https://vercel.com',
+              title:'PrivateService'
+            }].map((item: any)=><NavCard key={item.url} record={item}/>)
           }
         </div>
       </main>
