@@ -12,7 +12,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <div className={styles.grid}>
-          <a target='_blank' href="https://zzfzzf.com" className={styles.card}>
+          <a rel="noreferrer" target='_blank' href="https://zzfzzf.com" className={styles.card}>
             <h2>Blog &rarr;</h2>
             <p>Record some study materials</p>
           </a>
