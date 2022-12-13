@@ -1,10 +1,24 @@
 [
   {
     "title": "AdGuard Home",
-    "url": "http://192.168.100.1:8080"
+    "url": "http://192.168.100.1:8080",
+    "icon": "https://cdn.orluma.ltd/midway/adguard-icon.svg",
+    "local": false
   },
   {
     "title": "Grafana",
-    "url": "https://grafana.zzfzzf.com"
+    "url": "https://grafana.zzfzzf.com",
+    "local": true
+  },
+  {
+    "title": "OpenWrt",
+    "url": "http://192.168.100.1",
+    "local": false
+  },
+  {
+    "title": "Surgio",
+    "url": "https://s.zzfzzf.com",
+    "local": true,
+    "private": true
   }
 ]

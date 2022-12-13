@@ -2,5 +2,25 @@ import '../../styles/globals.css'
 import type { AppProps } from 'next/app'
 
 export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+  return <div className='container mx-auto p-4'>
+    <header>
+      <ul>
+        <li>HomeLab</li>
+        <li>PublicService</li>
+      </ul>
+    </header>
+    <Component {...pageProps} />
+    <footer >
+      <a
+          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          target="_blank"
+          rel="noopener noreferrer"
+      >
+        Powered by
+        <span>
+            OOCC.ES
+          </span>
+      </a>
+    </footer>
+  </div>
 }
