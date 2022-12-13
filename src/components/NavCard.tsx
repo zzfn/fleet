@@ -5,7 +5,7 @@ const NavCard = ({record}:any) => {
       <p>
 
           <Image
-              src={record.icon||'https://cdn.orluma.ltd/midway/reactjs-icon.svg'}
+              src={record.icon}
               alt={record.title}
               width={30}
               height={30}

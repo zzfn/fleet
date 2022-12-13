@@ -1,10 +1,10 @@
 import Head from 'next/head'
 import NavCard from "../components/NavCard";
 import useSWR from 'swr'
-import NAV_JSON from './nav.json'
+
 const fetcher = (url:string) => fetch(url).then((res) => res.json())
 export default function Home() {
-    const { data } = useSWR('/api/hello', fetcher)
+    const { data } = useSWR('https://gateway.zzfzzf.com/nav/list', fetcher)
 
     return (
     <>
@@ -15,7 +15,7 @@ export default function Home() {
       </Head>
       <main className='grid grid-cols-3 gap-4'>
           {
-            NAV_JSON.map((item: any)=><NavCard key={item.url} record={item}/>)
+              data?.data.map((item: any)=><NavCard key={item.url} record={item}/>)
           }
       </main>
     </>
