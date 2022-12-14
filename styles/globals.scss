@@ -1,7 +1,13 @@
+@import '~@oc/design/dist/theme.scss';
+@import '~@oc/design/dist/bundle.min.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+:root{
+  @include colors-light;
+}
 html,
 body {
   padding: 0;

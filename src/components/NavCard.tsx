@@ -1,4 +1,6 @@
 import Image from 'next/image'
+import {Tag} from "@oc/design";
+
 const NavCard = ({record}:any) => {
   return <a rel="noreferrer" target='_blank' href={record.url} className='hover:scale-105 shadow rounded flex flex-col justify-between items-center p-6'>
       <h2>{record.title} &rarr;</h2>
@@ -11,7 +13,7 @@ const NavCard = ({record}:any) => {
               height={30}
           />
       </p>
-      <p>{record.url}{record.local&&<span>公网</span>}</p>
+      <p>{record.url}{record.local&&<Tag>内网</Tag>}</p>
   </a>
 }
 export default NavCard
