@@ -2,7 +2,7 @@ import Image from 'next/image'
 import {Tag} from "@oc/design";
 
 const NavCard = ({record}:any) => {
-  return <a rel="noreferrer" target='_blank' href={record.url} className='hover:scale-105 shadow rounded flex flex-col justify-between items-center p-6'>
+  return <a rel="noreferrer" target='_blank' href={record.url} className='shadow rounded flex flex-col justify-between items-center p-6'>
       <h2>{record.title} &rarr;</h2>
       <p>
 
