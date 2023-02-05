@@ -3,7 +3,7 @@ import NavCard from "../components/NavCard";
 import useSWR from 'swr'
 const fetcher = (url:string) => fetch(url).then((res) => res.json())
 export default function Home() {
-  const { data } = useSWR('https://gateway.zzfzzf.com/nav/list', fetcher)
+  const { data } = useSWR('https://api.zzfzzf.com/nav/list', fetcher)
 
 
     return (
